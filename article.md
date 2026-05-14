@@ -24,19 +24,19 @@ This structure works but often runs into limits. The database may not scale. ETL
 
 In practice, the data tier becomes the slowest and least flexible part of the stack:
 
-- **Security gaps** when multiple apps each demand access to raw databases.
-- **Resiliency problems** when nightly ETL jobs fail or lag.
-- **Scaling issues** when queries from different workloads compete for resources.
+- Security gaps when multiple apps each demand access to raw databases.
+- Resiliency problems when nightly ETL jobs fail or lag.
+- Scaling issues when queries from different workloads compete for resources.
 
 Modern applications need more. They need streaming, machine learning, and real-time personalization, all rooted in the data tier.
 
 ### Reinventing the Data Tier with Databricks
 Databricks replaces the traditional database tier with a Lakehouse Platform. Instead of a siloed database, you get:
 
-- **Delta Lake** for ACID transactions and scalable storage.
-- **Unity Catalog** for fine-grained security and governance.
-- **Streaming** support to power real-time applications.
-- **Built-in ML/AI** with Mosaic AI and MLflow for predictive features.
+- Delta Lake for ACID transactions and scalable storage.
+- Unity Catalog for fine-grained security and governance.
+- Streaming support to power real-time applications.
+- Built-in ML/AI with Mosaic AI and MLflow for predictive features.
 
 The result: a single, unified data tier that supports every workload an app might need.
 
@@ -97,7 +97,7 @@ print(response.json())
 This shows how the data tier is no longer "just a database." It's a governed, scalable, intelligent system that powers real-time features.
 
 ### Security and Resiliency Baked In
-- **Security**: Unity Catalog ensures the app only queries governed tables and models. No direct raw database access is needed.
-- **Resiliency**: Delta Lake transactions guarantee consistency. If a job fails, your tables remain correct.
-- **Scalability**: The data tier can handle both batch updates and streaming events without different systems.
+- Security: Unity Catalog ensures the app only queries governed tables and models. No direct raw database access is needed.
+- Resiliency: Delta Lake transactions guarantee consistency. If a job fails, your tables remain correct.
+- Scalability: The data tier can handle both batch updates and streaming events without different systems.
 The three-tier architecture remains a powerful structure. But the true differentiator today lies in the data tier. Databricks makes that tier not only secure and resilient, but also intelligent and scalable.
